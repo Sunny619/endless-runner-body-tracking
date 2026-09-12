@@ -1,0 +1,50 @@
+# Compiled Object files, Static and Dynamic Libraries
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+bin/
+build/
+out/
+cmake-build-*/
+
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Documentation binaries, archives & PII artifacts
+*.pdf
+*.zip
+*.tar.gz
+*.7z
+*.rar
+
+# Logs and runtime dumps
+*.log
+crash_dump*.dmp
