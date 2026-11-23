@@ -3,8 +3,12 @@
 #include<time.h>
 #include<string.h>
 #include <string>
-#define GL_SILENCE_DEPRECATION
-#include<GLUT/glut.h>
+#if defined(__APPLE__)
+    #define GL_SILENCE_DEPRECATION
+    #include <GLUT/glut.h>
+#else
+    #include <GL/glut.h>
+#endif
 #include<cmath>
 using namespace std;
 //int axis = 0;
@@ -411,7 +415,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(m_screenWidth, m_screenHeight);
     glutInitWindowPosition(0, 0);
-    glutCreateWindow("ABHIGYAN AND DUBEY ENDLESS RUNNER");
+    glutCreateWindow("CyberRunner 3D - AI Vision Endless Runner");
 
     //int x = 1000, y = 1000, n = 4, ok;
     //ok = stbi_info("a.png", &x, &y, &n);
